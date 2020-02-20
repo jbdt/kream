@@ -34,15 +34,15 @@ gem 'sdoc', '>= 0.4.0', group: :doc
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  # gem 'byebug'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  # gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  # gem 'spring'
 end
 
 
@@ -50,9 +50,10 @@ gem 'devise'
 gem 'high_voltage'
 gem 'mysql2', '~> 0.3.18'
 gem 'therubyracer', :platform=>:ruby
+gem 'font-awesome-rails'
 
 group :development do
-  gem 'better_errors'
+  # gem 'better_errors'
   gem 'capistrano', '~> 3.0.1'
   gem 'capistrano-bundler'
   gem 'capistrano-rails', '~> 1.1.0'
@@ -60,5 +61,14 @@ group :development do
   gem 'capistrano-rvm', '~> 0.1.1'
   gem 'rails_apps_pages'
   gem 'rails_layout'
+
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'debbie'
+  gem 'sextant'
+  gem 'shog'
+  gem 'spring'
+  gem 'web-console', '>= 3.3.0'
 end
 
