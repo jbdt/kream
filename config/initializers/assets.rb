@@ -25,3 +25,7 @@ Rails.application.config.assets.precompile += %w( carousel.js )
 Rails.application.config.assets.precompile += %w( animate.js )
 Rails.application.config.assets.precompile += %w( custom.js )
 Rails.application.config.assets.precompile += %w( videobg.js )
+
+Rails.application.config.assets.precompile += %w( swirl.js )
+Rails.application.config.assets.precompile += %w( noise.min.js )
+Rails.application.config.assets.precompile += %w( util.js )

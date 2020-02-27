@@ -92,7 +92,7 @@ body {
     background-color: #f6f6f6;
     line-height: 1.6;
     font-size: 16px;
-    color: #a2a2a2;
+    color: #eeeeeeee;
 }
 
 body,
@@ -335,6 +335,10 @@ HEADER
 
 .social a.facebook {
     background-color: #3b5998;
+}
+
+.social a.instagram {
+    background-color: #5901ba;
 }
 
 .social a.pinterest {
@@ -975,7 +979,7 @@ SECTIONS
 }
 
 .section {
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     padding: 8rem 0;
     position: relative;
     display: block;
@@ -1237,7 +1241,7 @@ COURSE MODULES
     right: 0;
     opacity: 0;
     top: 0;
-    background-color: rgba(1, 186, 207, 0.8);
+    background-color: rgba(156, 39, 176, 0.8);
     -webkit-transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
     -moz-transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
     -o-transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
@@ -1725,6 +1729,7 @@ TESTIMONIAL
 .custom-module h2 {
     font-size: 28px;
     font-weight: bold;
+    color: #ffffffdd;
     margin: 20px 0 30px;
     padding: 0;
 }
@@ -2090,11 +2095,11 @@ COLOR BLUE
 ******************************************/
 
 .yamm .dropdown .dropdown-menu {
-    border-top-color: #01bacf;
+    border-top-color: #9c27b0;
 }
 
 .iconitem a.shopicon i {
-    color: #01bacf !important;
+    color: #9c27b0 !important;
 }
 
 .shop-desc small,
@@ -2121,7 +2126,7 @@ a:hover,
 a:focus,
 .box i,
 .topbar .text-left i {
-    color: #01bacf;
+    color: #9c27b0;
 }
 
 .shop-extra .nav-tabs>li:hover a,
@@ -2129,7 +2134,7 @@ a:focus,
 .modal .form-control,
 .form-control:focus,
 .btn-transparent {
-    border-color: #01bacf !important;
+    border-color: #9c27b0 !important;
 }
 
 .cb,
@@ -2150,9 +2155,9 @@ mark,
 .image-wrap:before,
 .image-wrap:after,
 .btn-primary {
-    border-color: #01bacf;
-    background-color: #01bacf;
-    box-shadow: inset 0 0 0 0 #00a8bd;
+    border-color: #9c27b0;
+    background-color: #9c27b0;
+    box-shadow: inset 0 0 0 0 #673ab7;
     -webkit-transition: all ease 0.5s;
     -moz-transition: all ease 0.5s;
     transition: all ease 0.5s;
@@ -2162,7 +2167,7 @@ mark,
 .tags-widget a:hover,
 .btn-primary:hover {
     color: #ffffff !important;
-    box-shadow: inset 0 100px 0 0 #00a8bd;
+    box-shadow: inset 0 100px 0 0 #673ab7;
     border-color: #00a8bd;
 }
 
