@@ -125,7 +125,7 @@ h6 {
 
 .cop-logo img,
 a {
-    color: #000;
+    color: #c064d0;
     text-decoration: none !important;
     -webkit-transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
@@ -1734,6 +1734,14 @@ TESTIMONIAL
     padding: 0;
 }
 
+.custom-module h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffffdd;
+    margin: 20px 0 30px;
+    padding: 0;
+}
+
 .custom-module mark {
     line-height: 1;
     color: #ffffff;
@@ -2312,4 +2320,12 @@ RESPONSIVE
     .nav>li>a {
         padding: 1em 0.7em;
     }
+}
+
+/******************************************
+CUSTOM
+******************************************/
+
+.img-center {
+    margin: 0 auto;
 }

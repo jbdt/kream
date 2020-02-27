@@ -129,7 +129,7 @@ function checkBounds(x, y) {
 }
 
 function createCanvas() {
-  container = document.querySelector('#wrapper > section:nth-child(4)');
+  container = document.querySelector('#selection1');
 	canvas = {
 		a: document.createElement('canvas'),
 		b: document.createElement('canvas')
