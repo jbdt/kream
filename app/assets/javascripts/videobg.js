@@ -61,7 +61,7 @@ this.player.seekTo(0)}}}})(void 0);
                 "autoplay": true,       //Autoplay at start
                 "muted": true,          //Muted at start
                 "mp4":"upload/preview.avi" ,     //Path to video mp4 format
-                "ogg":"upload/preview.ogg" ,     //Path to video ogg format
+                "ogg":"upload/preview.ogv" ,     //Path to video ogv format
                 "webm":"upload/preview.webm" ,     //Path to video webm format
                 "video_ratio": 1.7778,              // width/height -> If none provided sizing of the video is set to adjust
                 "fallback_image": "upload/dummy.gif",   //Fallback image path
