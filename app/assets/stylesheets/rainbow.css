@@ -1,0 +1,117 @@
+.rainbow1 {
+    font-size:24px;
+    text-shadow: 2px 2px 4px #000000;
+    -webkit-animation: rainbow 8s infinite;
+    -ms-animation: rainbow 8s infinite;
+    animation: rainbow 8s infinite;
+    animation-delay: 0.0s;
+}
+.rainbow2 {
+    font-size:24px;
+    text-shadow: 2px 2px 4px #000000;
+    -webkit-animation: rainbow 8s infinite;
+    -ms-animation: rainbow 8s infinite;
+    animation: rainbow 8s infinite;
+    animation-delay: 0.3s;
+}
+.rainbow3 {
+    font-size:24px;
+    text-shadow: 2px 2px 4px #000000;
+    -webkit-animation: rainbow 8s infinite;
+    -ms-animation: rainbow 8s infinite;
+    animation: rainbow 8s infinite;
+    animation-delay: 0.6s;
+}
+.rainbow4 {
+    font-size:24px;
+    text-shadow: 2px 2px 4px #000000;
+    -webkit-animation: rainbow 8s infinite;
+    -ms-animation: rainbow 8s infinite;
+    animation: rainbow 8s infinite;
+    animation-delay: 0.9s;
+}
+.rainbow5 {
+    font-size:24px;
+    text-shadow: 2px 2px 4px #000000;
+    -webkit-animation: rainbow 8s infinite;
+    -ms-animation: rainbow 8s infinite;
+    animation: rainbow 8s infinite;
+    animation-delay: 1.2s;
+}
+.rainbow6 {
+    font-size:24px;
+    text-shadow: 2px 2px 4px #000000;
+    -webkit-animation: rainbow 8s infinite;
+    -ms-animation: rainbow 8s infinite;
+    animation: rainbow 8s infinite;
+    animation-delay: 1.5s;
+}
+.rainbow7 {
+    font-size:24px;
+    text-shadow: 2px 2px 4px #000000;
+    -webkit-animation: rainbow 8s infinite;
+    -ms-animation: rainbow 8s infinite;
+    animation: rainbow 8s infinite;
+    animation-delay: 1.8s;
+}
+.rainbow8 {
+    font-size:24px;
+    text-shadow: 2px 2px 4px #000000;
+    -webkit-animation: rainbow 8s infinite;
+    -ms-animation: rainbow 8s infinite;
+    animation: rainbow 8s infinite;
+    animation-delay: 2.1s;
+}
+.rainbow9 {
+    font-size:24px;
+    text-shadow: 2px 2px 4px #000000;
+    -webkit-animation: rainbow 8s infinite;
+    -ms-animation: rainbow 8s infinite;
+    animation: rainbow 8s infinite;
+    animation-delay: 2.5s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+    0%{color: orange;}
+    10%{color: purple;}
+    20%{color: red;}
+    30%{color: CadetBlue;}
+    40%{color: yellow;}
+    50%{color: coral;}
+    60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+    100%{color: orange;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+    0%{color: orange;}
+    10%{color: purple;}
+    20%{color: red;}
+    30%{color: CadetBlue;}
+    40%{color: yellow;}
+    50%{color: coral;}
+    60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+    100%{color: orange;}
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+    0%{color: orange;}
+    10%{color: purple;}
+    20%{color: red;}
+    30%{color: CadetBlue;}
+    40%{color: yellow;}
+    50%{color: coral;}
+    60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+    100%{color: orange;}
+}

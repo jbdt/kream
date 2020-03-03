@@ -1021,8 +1021,8 @@ SECTIONS
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: -1;
-    background: url(pattern.png) repeat center center rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    background: url(pattern.png) repeat center center rgba(0, 0, 0, 0.2);
 }
 
 .video-section {
@@ -2074,7 +2074,7 @@ MICS
     right: 0;
     bottom: 0;
     left: 0;
-    background: #fff;
+    background: #000000;
     z-index: 11000;
     position: fixed;
     display: block
@@ -2325,6 +2325,9 @@ RESPONSIVE
 /******************************************
 CUSTOM
 ******************************************/
+html {
+    scroll-behavior: smooth;
+}
 
 .img-center {
     margin: 0 auto;
