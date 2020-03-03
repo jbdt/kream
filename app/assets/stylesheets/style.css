@@ -1049,6 +1049,10 @@ SECTIONS
     padding: 10px;
 }
 
+.slider-bottom a {
+    color: #ffffff;
+}
+
 .home-text-wrapper {
     display: table;
     width: 100%;
@@ -1075,11 +1079,12 @@ SECTIONS
     padding: 0;
     margin: 0;
     font-weight: 700;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .home-message small {
-    font-size: 16px;
-    font-family: 'Droid Serif', sans-serif;
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
     font-style: italic;
     display: block;
     padding: 20px 0 35px;
@@ -2331,4 +2336,8 @@ html {
 
 .img-center {
     margin: 0 auto;
+}
+
+.owner {
+    font-family: 'Gloria Hallelujah', cursive;
 }
