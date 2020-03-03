@@ -19,7 +19,7 @@ const zOff = 0.0005;
 const backgroundColor = 'hsla(260,40%,5%,1)';
 
 let container;
-let canvas;
+let canvasS;
 let ctx;
 let center;
 let gradient;
@@ -55,7 +55,7 @@ function initParticles() {
 function initParticle(i) {
   let x, y, vx, vy, life, ttl, speed, radius, hue;
 
-  x = rand(canvas.a.width);
+  x = rand(canvasS.aS.width);
   y = center[1] + randRange(rangeY);
   vx = 0;
   vy = 0;
@@ -107,34 +107,34 @@ function updateParticle(i) {
 }
 
 function drawParticle(x, y, x2, y2, life, ttl, radius, hue) {
-  ctx.a.save();
-  ctx.a.lineCap = 'round';
-  ctx.a.lineWidth = radius;
-  ctx.a.strokeStyle = `hsla(${hue},100%,60%,${fadeInOut(life, ttl)})`;
-  ctx.a.beginPath();
-  ctx.a.moveTo(x, y);
-  ctx.a.lineTo(x2, y2);
-  ctx.a.stroke()
-  ctx.a.closePath();
-  ctx.a.restore();
+  ctx.aS.save();
+  ctx.aS.lineCap = 'round';
+  ctx.aS.lineWidth = radius;
+  ctx.aS.strokeStyle = `hsla(${hue},100%,60%,${fadeInOut(life, ttl)})`;
+  ctx.aS.beginPath();
+  ctx.aS.moveTo(x, y);
+  ctx.aS.lineTo(x2, y2);
+  ctx.aS.stroke()
+  ctx.aS.closePath();
+  ctx.aS.restore();
 }
 
 function checkBounds(x, y) {
 	return(
-		x > canvas.a.width ||
+		x > canvasS.aS.width ||
 		x < 0 ||
-		y > canvas.a.height ||
+		y > canvasS.aS.height ||
 		y < 0
 	);
 }
 
 function createCanvas() {
   container = document.querySelector('#formlist');
-	canvas = {
-		a: document.createElement('canvas'),
-		b: document.createElement('canvas')
+	canvasS = {
+		aS: document.createElement('canvas'),
+		bS: document.createElement('canvas')
 	};
-	canvas.b.style = `
+	canvasS.bS.style = `
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -142,10 +142,10 @@ function createCanvas() {
 		height: 100%;
         z-index: -1;
 	`;
-	container.appendChild(canvas.b);
+	container.appendChild(canvasS.bS);
 	ctx = {
-		a: canvas.a.getContext('2d'),
-		b: canvas.b.getContext('2d')
+		aS: canvasS.aS.getContext('2d'),
+		bS: canvasS.bS.getContext('2d')
   };
   center = [];
 }
@@ -153,48 +153,48 @@ function createCanvas() {
 function resize() {
 	const { innerWidth, innerHeight } = window;
 
-	canvas.a.width = innerWidth;
-  canvas.a.height = innerHeight;
+	canvasS.aS.width = innerWidth;
+  canvasS.aS.height = innerHeight;
 
-  ctx.a.drawImage(canvas.b, 0, 0);
+  ctx.aS.drawImage(canvasS.bS, 0, 0);
 
-	canvas.b.width = innerWidth;
-  canvas.b.height = innerHeight;
+	canvasS.bS.width = innerWidth;
+  canvasS.bS.height = innerHeight;
 
-  ctx.b.drawImage(canvas.a, 0, 0);
+  ctx.bS.drawImage(canvasS.aS, 0, 0);
 
-  center[0] = 0.5 * canvas.a.width;
-  center[1] = 0.5 * canvas.a.height;
+  center[0] = 0.5 * canvasS.aS.width;
+  center[1] = 0.5 * canvasS.aS.height;
 }
 
 function renderGlow() {
-  ctx.b.save();
-  ctx.b.filter = 'blur(8px) brightness(200%)';
-  ctx.b.globalCompositeOperation = 'lighter';
-  ctx.b.drawImage(canvas.a, 0, 0);
-  ctx.b.restore();
+  ctx.bS.save();
+  ctx.bS.filter = 'blur(8px) brightness(200%)';
+  ctx.bS.globalCompositeOperation = 'lighter';
+  ctx.bS.drawImage(canvasS.aS, 0, 0);
+  ctx.bS.restore();
 
-  ctx.b.save();
-  ctx.b.filter = 'blur(4px) brightness(200%)';
-  ctx.b.globalCompositeOperation = 'lighter';
-  ctx.b.drawImage(canvas.a, 0, 0);
-  ctx.b.restore();
+  ctx.bS.save();
+  ctx.bS.filter = 'blur(4px) brightness(200%)';
+  ctx.bS.globalCompositeOperation = 'lighter';
+  ctx.bS.drawImage(canvasS.aS, 0, 0);
+  ctx.bS.restore();
 }
 
 function renderToScreen() {
-  ctx.b.save();
-  ctx.b.globalCompositeOperation = 'lighter';
-  ctx.b.drawImage(canvas.a, 0, 0);
-  ctx.b.restore();
+  ctx.bS.save();
+  ctx.bS.globalCompositeOperation = 'lighter';
+  ctx.bS.drawImage(canvasS.aS, 0, 0);
+  ctx.bS.restore();
 }
 
 function draw() {
   tick++;
 
-  ctx.a.clearRect(0, 0, canvas.a.width, canvas.a.height);
+  ctx.aS.clearRect(0, 0, canvasS.aS.width, canvasS.aS.height);
 
-  ctx.b.fillStyle = backgroundColor;
-  ctx.b.fillRect(0, 0, canvas.a.width, canvas.a.height);
+  ctx.bS.fillStyle = backgroundColor;
+  ctx.bS.fillRect(0, 0, canvasS.aS.width, canvasS.aS.height);
 
   drawParticles();
   renderGlow();
