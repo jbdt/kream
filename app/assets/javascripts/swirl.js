@@ -193,7 +193,7 @@ function draw() {
 
   ctx.aS.clearRect(0, 0, canvasS.aS.width, canvasS.aS.height);
 
-  ctx.bS.fillStyle = backgroundColor;
+  // ctx.bS.fillStyle = backgroundColor;
   ctx.bS.fillRect(0, 0, canvasS.aS.width, canvasS.aS.height);
 
   drawParticles();

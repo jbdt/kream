@@ -9,8 +9,8 @@ const baseSpeedA = 0.05;
 const rangeSpeedA = 0.1;
 const baseWidth = 10;
 const rangeWidth = 20;
-const baseHueA = 120;
-const rangeHueA = 60;
+const baseHueA = 220;
+const rangeHueA = 100;
 const baseTTLA = 50;
 const rangeTTLA = 100;
 const noiseStrength = 100;
@@ -170,7 +170,7 @@ function render() {
 function drawA() {
   tickA++;
   ctxA.aA.clearRect(0, 0, canvasA.aA.width, canvasA.aA.height);
-  ctxA.bA.fillStyle = backgroundColorA;
+  // ctxA.bA.fillStyle = backgroundColorA;
   ctxA.bA.fillRect(0, 0, canvasA.bA.width, canvasA.aA.height);
   drawRays();
   render();

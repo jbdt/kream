@@ -995,6 +995,7 @@ SECTIONS
     padding: 0;
     line-height: 1;
     font-size: 30px;
+    color: #FFF;
     font-weight: 700;
 }
 
@@ -1008,11 +1009,10 @@ SECTIONS
 }
 
 .section.gb {
-    background-color: #f6f6f6;
 }
 
 .section.db {
-    background-color: #000000;
+    background-color: #000;
 }
 
 .overlay {
@@ -1096,7 +1096,7 @@ SECTIONS
 }
 
 .box {
-    background-color: #ffffff;
+    background-color: #9062ff;
     padding: 4rem;
     position: relative;
     z-index: 11;
@@ -1919,7 +1919,7 @@ FOOTER
 
 .copyrights {
     background-color: #000;
-    border-top: 1px solid #181818;
+    border-top: 1px solid #000;
     padding: 30px 0;
 }
 
