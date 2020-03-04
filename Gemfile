@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-ruby '2.5.1'
+ruby '2.5.7'
 gem 'rails', '4.2.10'
 # Use sqlite3 as the database for Active Record
 # Use SCSS for stylesheets
@@ -54,11 +54,13 @@ gem 'font-awesome-rails'
 
 group :development do
   # gem 'better_errors'
-  gem 'capistrano', '~> 3.0.1'
+  gem 'capistrano', '~> 3.11'
   gem 'capistrano-bundler'
-  gem 'capistrano-rails', '~> 1.1.0'
+  gem 'capistrano-rails', '~> 1.4'
   gem 'capistrano-rails-console'
   gem 'capistrano-rvm', '~> 0.1.1'
+  gem 'capistrano-passenger', '~> 0.2.0'
+  gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
   gem 'rails_apps_pages'
   gem 'rails_layout'
 
