@@ -2343,6 +2343,6 @@ html {
 }
 
 #formlist {
-    background-image: url(background_formlist.gif);
+    background-image: url(/upload/background_formlist.gif);
     background-size: cover;
 }
