@@ -35,7 +35,7 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: kream_production
+  database: kream_development
   pool: 5
   username: usuario
   password: usuario
