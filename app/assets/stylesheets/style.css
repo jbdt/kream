@@ -2341,3 +2341,8 @@ html {
 .owner {
     font-family: 'Gloria Hallelujah', cursive;
 }
+
+#formlist {
+    background-image: url(background_formlist.gif);
+    background-size: cover;
+}
