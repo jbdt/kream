@@ -1039,7 +1039,7 @@ SECTIONS
 }
 
 .slider-bottom {
-    position: absolute;
+    position: relative;
     bottom: 40px;
     left: 0;
     font-size: 10px;
