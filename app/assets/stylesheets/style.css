@@ -1186,7 +1186,7 @@ COURSE MODULES
 
 .course-box {
     border-radius: 6px 6px 0 0;
-    background-color: #ffffff;
+    background-color: #00000080;
     border: 1px solid #eaeaea;
 }
 
@@ -1204,6 +1204,10 @@ COURSE MODULES
     padding: 0 0 1.5rem;
     font-weight: 700;
     margin: 0;
+}
+
+.course-details h4 a {
+    color: #fff;
 }
 
 .course-box small {
@@ -2356,4 +2360,21 @@ html {
 #formlist {
     background-image: url(/upload/background_formlist.gif);
     background-size: cover;
+}
+
+#past_sessions{
+    background-image: url(/upload/background_past_sessions.gif);
+    background-size: cover;
+}
+
+.line-height {
+    line-height: 4;
+}
+
+.formlist-button {
+    text-align: center;
+}
+
+.overlay-manual {
+    background-color: #00000080;
 }

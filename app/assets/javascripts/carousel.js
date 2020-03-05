@@ -3281,7 +3281,7 @@
                 margin: 15,
                 nav: true,
                 dots: false,
-                loop: true,
+                loop: false,
                 responsive: {
                   0: {
                     items: 1
