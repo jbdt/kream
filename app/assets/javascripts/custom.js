@@ -62,3 +62,7 @@ setTimeout(function(){
     $("#preloader").on(500).fadeOut();
     $(".preloader").on(600).fadeOut("slow");
 }, 5000);
+
+$('#modal-owner').on('shown.bs.modal', function () {
+    $('#modal-input').focus();
+})

@@ -333,7 +333,7 @@ HEADER
     border-radius: 0;
     font-family: 'Droid Serif', sans-serif;
     box-shadow: none;
-    color: #555;
+    color: #ffffff;
     display: block;
     font-size: 16px;
     line-height: 1.42857;
@@ -2300,4 +2300,11 @@ html {
 
 .color-white {
     color: #ffffffe0 !important;
+}
+
+.clic_here {
+    height: 45px;
+    position: relative;
+    left: -25px;
+    bottom: -20px;
 }
