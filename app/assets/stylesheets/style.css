@@ -2265,6 +2265,12 @@ html {
     margin: 0 auto;
 }
 
+.img-border {
+    border-radius: 6px;
+    background-color: #00000080;
+    border: 1px solid #eaeaea;
+}
+
 .owner {
     font-family: 'Gloria Hallelujah', cursive;
     display: inline-block;
@@ -2291,4 +2297,8 @@ html {
 
 .overlay-manual {
     background-color: #00000080;
+}
+
+.color-white {
+    color: #ffffffe0 !important;
 }
