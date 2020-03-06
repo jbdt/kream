@@ -1,8 +1,11 @@
 if (window.matchMedia("(orientation: portrait)").matches) {
     $(".js-height-full").height($(window).height());
 }
-if (window.matchMedia("(orientation: landscape)").matches) {
+if ((window.matchMedia("(orientation: landscape)").matches) && (window.matchMedia('screen and (max-width: 990px)').matches)) {
     $(".js-height-full").height($(window).width());
+}
+if ((window.matchMedia("(orientation: landscape)").matches) && !(window.matchMedia('screen and (max-width: 990px)').matches)) {
+    $(".js-height-full").height($(window).height());
 }
 
 $(".js-height-parent").each(function() {
