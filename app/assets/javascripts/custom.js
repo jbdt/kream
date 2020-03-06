@@ -45,12 +45,23 @@ $('.header').affix({
     }
 })
 
+if($("img[src$='dummy.gif']").length > 0) {
+    console.log('aaaa')
+}
+
+var loaded = false;
 $(window).load(function() {
+    loaded = true;
+    if($("img[src$='upload/dummy.jpg']").length) {
+        $("img[src$='upload/dummy.jpg']").attr("src","upload/dummy.gif");
+    }
     $("#preloader").on(500).fadeOut();
     $(".preloader").on(600).fadeOut("slow");
 });
-
 setTimeout(function(){
     $("#preloader").on(500).fadeOut();
     $(".preloader").on(600).fadeOut("slow");
-}, 6000);
+    if($("img[src$='upload/dummy.gif']").length > 0 && !loaded) {
+        $("img[src$='upload/dummy.gif']").attr("src","upload/dummy.jpg");
+    }
+}, 5000);
