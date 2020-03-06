@@ -74,6 +74,7 @@ s.addPrefix=function(a,b){r[a]=b};s.addFilter=function(a){u.push(a)};s.errorTime
                 youtube: !1,
                 priority: "html5",
                 fallback_image: !1,
+                fallback_gif: !1,
                 sizing: "fill",
                 start: 0
             };
@@ -209,7 +210,7 @@ s.addPrefix=function(a,b){r[a]=b};s.addFilter=function(a){u.push(a)};s.errorTime
                 this.parameters.muted && this.mute()
             },
             make_image: function () {
-                !1 !== this.parameters.fallback_image && (this.$img = b('<img rel="preload" src="' + this.parameters.fallback_image + '" alt=""/><img rel="preload" src="' + this.parameters.fallback_gif + '" alt="" style="display: none;"/>').appendTo(this.$video_holder).css({
+                !1 !== this.parameters.fallback_image && (this.$img = b('<img id="dummy_image" importance="high" src="' + this.parameters.fallback_image + '" alt=""/><img id="dummy_gif" importance="high" src="' + this.parameters.fallback_gif + '" alt=""/>').appendTo(this.$video_holder).css({
                     position: "absolute"
                 }), this.$img.ensureLoad(b.proxy(this.image_loaded, this)))
             },
