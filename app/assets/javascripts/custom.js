@@ -45,10 +45,6 @@ $('.header').affix({
     }
 })
 
-if($("img[src$='dummy.gif']").length > 0) {
-    console.log('aaaa')
-}
-
 var loaded = false;
 $(window).load(function() {
     loaded = true;
