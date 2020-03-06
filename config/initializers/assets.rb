@@ -11,7 +11,6 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 
 Rails.application.config.assets.precompile += %w( bootstrap.min.css )
-Rails.application.config.assets.precompile += %w( font-awesome.min.css )
 Rails.application.config.assets.precompile += %w( carousel.css )
 Rails.application.config.assets.precompile += %w( animate.css )
 Rails.application.config.assets.precompile += %w( style.css )
