@@ -1193,12 +1193,11 @@ COURSE MODULES
 
 .magnifier a {
     position: absolute;
-    top: 50%;
     text-align: center;
     left: 0;
     right: 0;
-    margin: -20px auto;
-    font-size: 30px;
+    padding: 50% 0 50% 0;
+    font-size: 50px;
     color: #fff !important;
 }
 
