@@ -1151,10 +1151,20 @@ COURSE MODULES
 
 .course-footer {
     border-top: 1px solid #eaeaea;
-    padding: 15px;
-}
+    padding: 15px 0 10px 0;}
 
 .course-footer .pull-right a {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1;
+    font-family: Arial
+}
+
+.course-footer .pull-center{
+    text-align: center;
+}
+
+.course-footer .pull-center p {
     font-weight: bold;
     font-size: 16px;
     line-height: 1;
@@ -2117,6 +2127,10 @@ COLOR GREEN
 
 .menu-widget small,
 .course-footer .pull-right a {
+    color: #82b440;
+}
+
+.course-footer .pull-center p {
     color: #82b440;
 }
 
