@@ -52,6 +52,7 @@ gem 'mysql2', '~> 0.3.18'
 gem 'therubyracer', :platform=>:ruby
 gem 'font-awesome-rails'
 
+
 group :development do
   # gem 'better_errors'
   gem 'capistrano', '~> 3.11'
