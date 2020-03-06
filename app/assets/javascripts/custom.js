@@ -46,9 +46,6 @@ $('.header').affix({
 })
 
 var loaded = false;
-if($('#dummy_gif').length > 0) {
-    $('#dummy_gif').hide();
-}
 $(window).load(function() {
     loaded = true;
     if($('#dummy_gif').length > 0) {
@@ -59,6 +56,9 @@ $(window).load(function() {
     $(".preloader").on(600).fadeOut("slow");
 });
 setTimeout(function(){
+    if($('#dummy_gif').length > 0 && !loaded) {
+        $('#dummy_gif').hide();
+    }
     $("#preloader").on(500).fadeOut();
     $(".preloader").on(600).fadeOut("slow");
 }, 5000);
