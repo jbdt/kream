@@ -318,6 +318,15 @@ HEADER
     transform: rotate(315deg);
 }
 
+.modal-textarea {
+    resize: none !important;
+    height: 100px !important;
+}
+
+.modal-button {
+    float: right;
+}
+
 .close,
 .close:focus,
 .close:hover {

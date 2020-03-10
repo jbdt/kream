@@ -64,5 +64,5 @@ setTimeout(function(){
 }, 5000);
 
 $('#modal-owner').on('shown.bs.modal', function () {
-    $('#modal-input').focus();
+    $('#modal-textarea').focus();
 })
