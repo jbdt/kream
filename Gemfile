@@ -54,7 +54,6 @@ gem 'font-awesome-rails'
 
 
 group :development do
-  # gem 'better_errors'
   gem 'capistrano', '~> 3.11'
   gem 'capistrano-bundler'
   gem 'capistrano-rails', '~> 1.4'
