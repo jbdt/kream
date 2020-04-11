@@ -219,3 +219,6 @@ fabric.properties
 .idea/**/markdown-navigator/
 
 # End of https://www.gitignore.io/api/ruby,rails,rubymine,database
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml

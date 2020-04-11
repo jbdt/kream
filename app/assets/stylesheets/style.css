@@ -281,8 +281,14 @@ HEADER
 }
 
 .modal {
-    top: 40%;
+    top: 15%;
     margin: -20px auto;
+}
+
+@media (max-width: 992px) {
+    .modal {
+        top: 30%;
+    }
 }
 
 .modal-backdrop.in {
@@ -320,7 +326,7 @@ HEADER
 
 .modal-textarea {
     resize: none !important;
-    height: 100px !important;
+    height: 200px !important;
 }
 
 .modal-button {

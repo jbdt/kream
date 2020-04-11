@@ -1,21 +1,45 @@
 <div class="modal fade" id="modal-owner" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
   <div class="modal-dialog">
-    <div class="modal-content">
+    <div id="modal-content" class="modal-content">
       <div id="div-forms">
         <form id="gin-form">
           <img class="bounce" src="/upload/cat.gif">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">+</span>
-          </button>
-          <div class="modal-body">
-            <textarea class="form-control modal-textarea" placeholder="Escribe aquí lo que quieras" id="modal-textarea" form="gin-form" rows="4" required></textarea>
-            <button class="btn btn-primary modal-button" class="">Enviar</button>
-            <br>
-            <p>Hola, soy Ginebra. Si tienes cualquier sugerencia, idea o simplemente quieres decirme algo, puedes hacerlo aquí arriba ^^</p>
-            <p>PÁGINA EN OBRAS!! ESTO AÚN NO FUNCIONA!!!!</p>
-          </div>
         </form>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">+</span>
+        </button>
+        <div class="modal-body">
+          <textarea class="form-control modal-textarea" placeholder="Escribe aquí lo que quieras" id="modal-textarea" form="gin-form" rows="8" required></textarea>
+          <button class="btn btn-primary modal-button" class="" onclick="submit()">Enviar</button>
+          <br>
+          <p>Hola, soy Ginebra. Si tienes cualquier sugerencia, idea o simplemente quieres decirme algo, puedes hacerlo aquí arriba</p>
+          <p>Recuerda decir quién eres y tus datos de contacto si quieres que conteste  ^^</p>
+        </div>
       </div>
+    </div>
+    <div id="modal-exit" class="modal-content" hidden>
+      <br><br><br><br>
+      <h1 style="text-align: center;"><span style="color: #ffffff;">&iexcl;Gracias!</span></h1>
+      <h1 style="text-align: center;"><span style="color: #ffffff;">😊</span></h1>
     </div>
   </div>
 </div>
+
+<script>
+    function submit() {
+        $.ajax({
+            type: "GET",
+            url: "/send_ginebrita",
+            data: {message: $("#modal-textarea")[0].value},
+            success: function(response){}
+        });
+        $("#modal-content").fadeOut(1500);
+        setTimeout(function () {$("#modal-exit").fadeIn(1500);}, 1700);
+        setTimeout(function () {$("#modal-owner").modal('hide');}, 3900);
+        setTimeout(function () {
+            $("#modal-exit").hide();
+            $("#modal-content").show();
+            $("#modal-textarea")[0].value = "";
+        }, 4000);
+    }
+</script>
