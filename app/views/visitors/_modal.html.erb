@@ -24,22 +24,3 @@
     </div>
   </div>
 </div>
-
-<script>
-    function submit() {
-        $.ajax({
-            type: "GET",
-            url: "/send_ginebrita",
-            data: {message: $("#modal-textarea")[0].value},
-            success: function(response){}
-        });
-        $("#modal-content").fadeOut(1500);
-        setTimeout(function () {$("#modal-exit").fadeIn(1500);}, 1700);
-        setTimeout(function () {$("#modal-owner").modal('hide');}, 3900);
-        setTimeout(function () {
-            $("#modal-exit").hide();
-            $("#modal-content").show();
-            $("#modal-textarea")[0].value = "";
-        }, 4000);
-    }
-</script>

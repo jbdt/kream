@@ -66,3 +66,48 @@ setTimeout(function(){
 $('#modal-owner').on('shown.bs.modal', function () {
     $('#modal-textarea').focus();
 })
+
+function submit() {
+    if ($("#modal-textarea")[0].value == "") {
+        alert("Escribe algo antes de darle a enviar");
+        return false;
+    } else {
+        $.ajax({
+            type: "GET",
+            url: "/send_ginebrita",
+            data: {message: $("#modal-textarea")[0].value},
+            success: function(response){}
+        });
+        $("#modal-content").fadeOut(1500);
+        setTimeout(function () {$("#modal-exit").fadeIn(1500);}, 1700);
+        setTimeout(function () {$("#modal-owner").modal('hide');}, 3900);
+        setTimeout(function () {
+            $("#modal-exit").hide();
+            $("#modal-content").show();
+            $("#modal-textarea")[0].value = "";
+        }, 4000);
+    }
+}
+
+function zoomImage(e) {
+    e = $(e);
+    var img = e.find(".tz-img")[0];
+    var modal = e.find(".tz-modal")[0];
+    var modalImg = e.find(".tz-modal .tz-img-modal")[0];
+    var captionText = e.find(".tz-modal .tz-caption")[0];
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    modal.onclick = function() {
+        e.find(".tz-modal").fadeOut(500);
+        setTimeout(function () {
+            modal.display = "none";
+            e.find(".tz-modal").show();
+        }, 500);
+    }
+}
+$(".to-zoom").each(function() {
+    zoomImage(this);
+});

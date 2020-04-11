@@ -163,7 +163,7 @@
             default_width: 500,
             default_height: 344,
             counter_separator_label: "/",
-            theme: "pp_default",
+            theme: "dark_square",
             horizontal_padding: 20,
             hideflash: !1,
             wmode: "opaque",
