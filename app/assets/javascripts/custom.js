@@ -67,28 +67,6 @@ $('#modal-owner').on('shown.bs.modal', function () {
     $('#modal-textarea').focus();
 })
 
-function submit() {
-    if ($("#modal-textarea")[0].value == "") {
-        alert("Escribe algo antes de darle a enviar");
-        return false;
-    } else {
-        $.ajax({
-            type: "GET",
-            url: "/send_ginebrita",
-            data: {message: $("#modal-textarea")[0].value},
-            success: function(response){}
-        });
-        $("#modal-content").fadeOut(1500);
-        setTimeout(function () {$("#modal-exit").fadeIn(1500);}, 1700);
-        setTimeout(function () {$("#modal-owner").modal('hide');}, 3900);
-        setTimeout(function () {
-            $("#modal-exit").hide();
-            $("#modal-content").show();
-            $("#modal-textarea")[0].value = "";
-        }, 4000);
-    }
-}
-
 function zoomImage(e) {
     e = $(e);
     var img = e.find(".tz-img")[0];

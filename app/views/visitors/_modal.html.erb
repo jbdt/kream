@@ -10,7 +10,7 @@
         </button>
         <div class="modal-body">
           <textarea class="form-control modal-textarea" placeholder="Escribe aquí lo que quieras" id="modal-textarea" form="gin-form" rows="8" required></textarea>
-          <button class="btn btn-primary modal-button" class="" onclick="submit()">Enviar</button>
+          <button class="btn btn-primary modal-button" class="" onclick="modalSubmit()">Enviar</button>
           <br>
           <p>Hola, soy Ginebra. Si tienes cualquier sugerencia, idea o simplemente quieres decirme algo, puedes hacerlo aquí arriba</p>
           <p>Recuerda decir quién eres y tus datos de contacto si quieres que conteste  ^^</p>
@@ -24,3 +24,27 @@
     </div>
   </div>
 </div>
+
+<script>
+    function modalSubmit() {
+        if ($("#modal-textarea")[0].value == "") {
+            alert("Escribe algo antes de darle a enviar");
+            return false;
+        } else {
+            $.ajax({
+                type: "GET",
+                url: "/send_ginebrita",
+                data: {message: $("#modal-textarea")[0].value, ip: "<%= request.remote_ip %>"},
+                success: function(response){}
+            });
+            $("#modal-content").fadeOut(1500);
+            setTimeout(function () {$("#modal-exit").fadeIn(1500);}, 1700);
+            setTimeout(function () {$("#modal-owner").modal('hide');}, 3900);
+            setTimeout(function () {
+                $("#modal-exit").hide();
+                $("#modal-content").show();
+                $("#modal-textarea")[0].value = "";
+            }, 4000);
+        }
+    }
+</script>
