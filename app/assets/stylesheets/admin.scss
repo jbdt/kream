@@ -1,3 +1,4 @@
+@import "bootstrap";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -10,13 +11,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require front/animate
- *= require front/bootstrap.min
- *= require front/carousel
- *= require front/cute-cat
- *= require front/prettyPhoto
- *= require front/rainbow
- *= require front/style
- *= require_self
- *= require font-awesome
+ *= require back/bootstrap
+ *= require back/custom
+ *= require back/font-awesome
  */

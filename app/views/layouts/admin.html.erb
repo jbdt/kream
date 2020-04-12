@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tablero</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Mobile Meta -->
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Site Meta -->
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Site Icons -->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <!-- Custom & Default Styles -->
+  <%= stylesheet_link_tag 'back/bootstrap' %>
+  <%= stylesheet_link_tag 'back/custom' %>
+  <%= stylesheet_link_tag 'back/font-awesome' %>
+
+</head>
+<body>
+
+<div id="wrapper">
+  <%= render 'nav_top' %>
+  <%= render 'nav_side' %>
+  <%= yield %>
+</div>
+
+<!-- JavaScript -->
+<%= javascript_include_tag 'back/custom' %>
+<%= javascript_include_tag 'back/jquery.min' %>
+
+</body>
+</html>

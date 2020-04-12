@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Kream</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%#= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
   <!-- Basic -->
@@ -37,11 +37,11 @@
 
 
   <!-- Custom & Default Styles -->
-  <%= stylesheet_link_tag 'bootstrap.min' %>
-  <%= stylesheet_link_tag 'carousel' %>
-  <%= stylesheet_link_tag 'animate' %>
-  <%= stylesheet_link_tag 'style' %>
-  <%= stylesheet_link_tag 'prettyPhoto' %>
+  <%= stylesheet_link_tag 'front/bootstrap.min' %>
+  <%= stylesheet_link_tag 'front/carousel' %>
+  <%= stylesheet_link_tag 'front/animate' %>
+  <%= stylesheet_link_tag 'front/style' %>
+  <%= stylesheet_link_tag 'front/prettyPhoto' %>
 
 </head>
 <body>
@@ -49,13 +49,13 @@
 <%= yield %>
 
 <!-- JavaScript -->
-<%= javascript_include_tag 'jquery.min.js' %>
-<%= javascript_include_tag 'bootstrap.min.js' %>
-<%= javascript_include_tag 'carousel.js' %>
-<%= javascript_include_tag 'animate.js' %>
-<%= javascript_include_tag 'custom.js' %>
-<%= javascript_include_tag 'videobg.js' %>
-<%= javascript_include_tag 'jquery.prettyPhoto.js' %>
+<%= javascript_include_tag 'front/jquery.min.js' %>
+<%= javascript_include_tag 'front/bootstrap.min' %>
+<%= javascript_include_tag 'front/carousel' %>
+<%= javascript_include_tag 'front/animate' %>
+<%= javascript_include_tag 'front/custom' %>
+<%= javascript_include_tag 'front/videobg' %>
+<%= javascript_include_tag 'front/jquery.prettyPhoto' %>
 
 </body>
 </html>
