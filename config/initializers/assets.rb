@@ -10,11 +10,12 @@ Rails.application.config.assets.version = '1.0'
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
 
+Rails.application.config.assets.precompile += %w( front/animate.css )
 Rails.application.config.assets.precompile += %w( front/bootstrap.min.css )
 Rails.application.config.assets.precompile += %w( front/carousel.css )
-Rails.application.config.assets.precompile += %w( front/animate.css )
-Rails.application.config.assets.precompile += %w( front/style.css )
 Rails.application.config.assets.precompile += %w( front/prettyPhoto.css )
+Rails.application.config.assets.precompile += %w( front/rainbow.css )
+Rails.application.config.assets.precompile += %w( front/style.css )
 
 Rails.application.config.assets.precompile += %w( front/jquery.min.js )
 Rails.application.config.assets.precompile += %w( front/bootstrap.min.js )
@@ -26,7 +27,6 @@ Rails.application.config.assets.precompile += %w( front/jquery.prettyPhoto.js )
 
 Rails.application.config.assets.precompile += %w( back/bootstrap.css )
 Rails.application.config.assets.precompile += %w( back/custom.css )
-Rails.application.config.assets.precompile += %w( back/font-awesome.css )
 
 Rails.application.config.assets.precompile += %w( back/custom.js )
 Rails.application.config.assets.precompile += %w( back/jquery.min.js )

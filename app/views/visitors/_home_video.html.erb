@@ -2,20 +2,20 @@
   <div class="overlay"></div>
   <div class="home-text-wrapper relative container">
     <div class="home-message">
-      <p>psychodelic tribal session</p>
-      <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</small>
+      <p><%= @general.big_title %></p>
+      <small><%= @general.short_title %></small>
       <div class="btn-wrapper">
         <div class="text-center line-height">
-          <a href="#formlist" class="btn btn-primary wow slideInLeft">Próxima sesión</a>
+          <a href="#formlist" class="btn btn-primary wow slideInLeft"><%= @general.button_current_party %></a>
           <span class="hidden-xs"> &nbsp;&nbsp;&nbsp;</span>
-          <a href="#past_sessions" class="btn btn-default wow slideInRight">Sesiones pasadas</a>
+          <a href="#past_sessions" class="btn btn-default wow slideInRight"><%= @general.button_past_sessions %></a>
         </div>
       </div>
     </div>
   </div>
-  <div class="slider-bottom">
-    <a href="#formlist">
-      <span>Explorar <i class="fa fa-angle-down"></i></span>
-    </a>
-  </div>
+  <!--  <div class="slider-bottom">-->
+  <!--    <a href="#formlist">-->
+  <!--      <span>Explorar <i class="fa fa-angle-down"></i></span>-->
+  <!--    </a>-->
+  <!--  </div>-->
 </section>

@@ -219,7 +219,7 @@ HEADER
     font-size: 14px;
 }
 
-.navbar-default .fa-angle-right {
+.navbar-default .fa-chevron-right {
     position: absolute;
     right: 30px;
 }

@@ -1,6 +1,6 @@
 class VisitorsController < ApplicationController
   def index
-
+    @general = General.first
   end
 
   def send_ginebrita

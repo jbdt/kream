@@ -1,3 +1,5 @@
+@import "bootstrap";
+@import "font-awesome";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -13,10 +15,9 @@
  *= require front/animate
  *= require front/bootstrap.min
  *= require front/carousel
- *= require front/cute-cat
+ *= require font-awesome
  *= require front/prettyPhoto
  *= require front/rainbow
  *= require front/style
  *= require_self
- *= require font-awesome
  */
