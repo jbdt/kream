@@ -78,7 +78,6 @@
     <orderEntry type="library" scope="PROVIDED" name="high_voltage (v3.1.2, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hirb (v0.7.3, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.9.5, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.9.1, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v4.3.5, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="libv8 (v7.3.492.27.1, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.4.0, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
@@ -112,14 +111,12 @@
     <orderEntry type="library" scope="PROVIDED" name="rake (v13.0.1, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rb-fsevent (v0.10.3, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rb-inotify (v0.10.1, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rdoc (v6.2.1, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="responders (v2.4.1, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.7.4, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-listen (v4.0.0, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v5.0.7, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sassc (v2.2.1, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sassc-rails (v2.1.2, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sdoc (v1.0.0, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sextant (v0.2.4, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="shog (v0.2.1, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring (v2.1.0, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
