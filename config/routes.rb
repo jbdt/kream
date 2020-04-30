@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'visitors#main'
+  root 'visitors#index'
   get '/send_ginebrita' => 'visitors#send_ginebrita'
   get '/main' => 'admin#main'
   get '/ui' => 'admin#ui'
