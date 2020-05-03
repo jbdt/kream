@@ -34,7 +34,6 @@
     <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.13, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="better_errors (v2.5.1, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="binding_of_caller (v0.8.0, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bootstrap (v4.4.1, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootstrap-sass (v3.4.1, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.4, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v2.1.4, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
@@ -95,7 +94,6 @@
     <orderEntry type="library" scope="PROVIDED" name="net-ssh (v5.2.0, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.10.8, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.5.0, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="popper_js (v1.16.0, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pry (v0.12.2, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pry-byebug (v3.8.0, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pry-doc (v0.13.5, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
@@ -110,14 +108,8 @@
     <orderEntry type="library" scope="PROVIDED" name="rails_layout (v1.0.42, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v4.2.10, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v13.0.1, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rb-fsevent (v0.10.3, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rb-inotify (v0.10.1, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="responders (v2.4.1, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sass (v3.7.4, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sass-listen (v4.0.0, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sass-rails (v5.0.7, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sassc (v2.2.1, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sassc-rails (v2.1.2, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sextant (v0.2.4, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="shog (v0.2.1, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring (v2.1.0, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
@@ -126,7 +118,6 @@
     <orderEntry type="library" scope="PROVIDED" name="sshkit (v1.20.0, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v1.0.1, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.6, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.10, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="turbolinks (v5.2.1, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="turbolinks-source (v5.2.0, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v1.2.6, RVM: ruby-2.5.7 [kream]) [gem]" level="application" />
